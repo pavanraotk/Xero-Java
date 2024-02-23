@@ -43,7 +43,7 @@ public class Employee {
     @JsonProperty("address")
     private Address address;
 
-    @JsonProperty("JobTitle")
+    @JsonProperty("jobTitle")
     private String jobTitle;
 
     @JsonProperty("email")
