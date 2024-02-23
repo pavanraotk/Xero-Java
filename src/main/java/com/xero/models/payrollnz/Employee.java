@@ -40,6 +40,9 @@ public class Employee {
     @JsonProperty("dateOfBirth")
     private LocalDate dateOfBirth;
 
+    @JsonProperty("employmentType")
+    private EmploymentType employmentType;
+
     @JsonProperty("address")
     private Address address;
 
@@ -632,6 +635,41 @@ public class Employee {
      */
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
+    }
+
+    /**
+     * employmentType
+     *
+     * @param employmentType EmploymentType
+     * @return Employee
+     */
+    public Employee employmentType(EmploymentType employmentType) {
+        this.employmentType = employmentType;
+        return this;
+    }
+
+    /**
+     * Get employmentType
+     *
+     * @return employmentType
+     */
+    @ApiModelProperty(value = "")
+    /**
+     * employmentType
+     *
+     * @return employmentType EmploymentType
+     */
+    public EmploymentType getEmploymentType() {
+        return employmentType;
+    }
+
+    /**
+     * employmentType
+     *
+     * @param employmentType EmploymentType
+     */
+    public void setEmploymentType(EmploymentType employmentType) {
+        this.employmentType = employmentType;
     }
 
     @Override
